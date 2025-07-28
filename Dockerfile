@@ -1,3 +1,4 @@
+
 FROM --platform=linux/amd64 python:3.11-slim
 
 # Set working directory
@@ -29,8 +30,10 @@ COPY challenge-1b.py .
 RUN chmod +x main.py
 
 # Start Ollama service and download model (in practice, this would be pre-done)
-# RUN ollama serve & sleep 5 && ollama pull llama2:7b-chat
+RUN ollama serve & sleep 5 && ollama pull gemma:2b
 
 # Set the entry point
 CMD ["python", "main.py"]
+
+
 
