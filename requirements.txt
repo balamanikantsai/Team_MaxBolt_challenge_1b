@@ -1,0 +1,10 @@
+docling
+beautifulsoup4
+langchain-community
+pypdf
+numpy
+chromadb
+sentence-transformers
+ollama
+
+
